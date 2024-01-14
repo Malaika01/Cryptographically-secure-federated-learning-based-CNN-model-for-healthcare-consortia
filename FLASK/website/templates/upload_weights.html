@@ -1,0 +1,10 @@
+{% block content %}
+<h1>Upload Weights</h1>
+<form action="{{ url_for('hospital.upload_weights') }}" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="file">Select a .pth file to upload:</label>
+        <input type="file" class="form-control-file" id="file" name="file" accept=".pth">
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+
+<style>
+.card {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-primary {
+    background-color: #b91b6f;
+    border-color: #b91b6f;
+}
+</style>
+
+<img src="..\static\logo.png" class="img-fluid d-block mx-auto mb-3" alt="Image description" width="300" height="300">
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 30vh;">
+    <div class="col-md-6 col-lg-4" style="padding-top: 10px;">
+        <div class="card">
+            <div class="card-header">Login</div>
+            <div class="card-body">
+                <div class="text-center mb-3">
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='/hospital_login'">Login as a Hospital</button>
+                </div>
+                <div class="text-center mb-3">
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='/admin_login'">Login as Admin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
